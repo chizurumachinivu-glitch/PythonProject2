@@ -10,8 +10,7 @@ df = pd.read_csv("titani_data.csv")
 # print(df.info())
 df['Embarked'] = df['Embarked'].fillna('Unknown')
 
-# get unique values for embarking port
-embarked_port = list(df['Embarking'].unique())
+embarked_port = list(df['Embarked'].unique())
 gender = list(df['Sex'].unique())
 
 col1, col2 = st.columns([1,1])
